@@ -63,6 +63,6 @@ function displayStateInfo() {
     infoStatehoodP.textContent = selectedState.statehood;
     infoNicknameP.textContent = selectedState.nickname;
 
-    infoPic.src = '/img/' + selectedState.value + '.jpg'; // swap image
+    infoPic.src = '/img/' + selectedState.value + '.jpg'; // swap image to chosen state
     infoNameFigCap.textContent = selectedState.name;
 }
