@@ -1,0 +1,87 @@
+*, *::before, *::after { box-sizing: border-box; }
+html {
+	color: #222;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+body {
+	margin: 10px;
+	color: #404040;
+	font-family: "Martel Sans", Helvetica, Arial, sans-serif;
+}
+img {
+	max-width: 100%;
+}
+h1 {
+	font-size: 3rem;
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: .3em;
+	padding: 0;
+}
+select {
+	font-family: sans-serif;
+}
+.outer-wrapper {
+	max-width: 780px;
+	margin: auto;
+}
+header {
+	padding: 20px;
+	text-align: center;
+}
+main {
+	background: #eee;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	padding: 20px;
+	text-align: center;
+}
+.img-holder {
+	text-align: center;
+	background: #fff;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	padding: 15px;
+	margin: 0;
+}
+#info-pic {
+	width: 300px;
+}
+.info-holder {
+	margin-top: 1.25em;
+}
+.info-holder p {
+	margin: 0 0 .5em;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+.info-holder strong {
+	font-weight: 800;
+	margin-right: 10px;
+}
+
+@media (min-width: 460px) {
+	.info-holder strong {
+		text-align: right;
+		width: 110px;
+	}
+	.info-holder p {
+		flex-direction: row;
+	}
+	.info-holder {
+		display: inline-flex;
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 780px) {
+	main {
+		display: flex;
+	}
+	.img-holder {
+		margin-right: 40px;
+		width: 290px;
+	}
+}
